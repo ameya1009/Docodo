@@ -1,0 +1,134 @@
+/* Container */
+.blogs-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Section title */
+.blogs-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Blog Form */
+.blog-form {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.blog-form h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.blog-form button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.blog-form button:hover {
+  background-color: #4338ca;
+}
+
+.blog-form p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* Blog Card */
+.blog-card {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.01);
+}
+
+.blog-card h3 {
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+}
+
+.blog-card p {
+  color: #555;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.blog-card button {
+  margin-top: 0.5rem;
+  background: #e11d48;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.blog-card button:hover {
+  background: #be123c;
+}
+
+/* Markdown styles */
+.blog-card :is(h1, h2, h3, strong, em, code) {
+  color: #1f2937;
+}
+
+.blog-card code {
+  background: #f3f4f6;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .blogs-container {
+    padding: 1rem 0.75rem;
+  }
+
+  .blog-form input,
+  .blog-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .blog-form button,
+  .blog-card button {
+    width: 100%;
+    padding: 0.65rem;
+  }
+}

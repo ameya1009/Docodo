@@ -1,0 +1,117 @@
+/* ===============================
+   Grid Container for Services
+================================== */
+.main-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+/* ===============================
+   Card Styles
+================================== */
+.service-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Optional hover glow effect */
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #60a5fa55, #a78bfa55);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.service-card:hover::before {
+  opacity: 0.15;
+}
+
+/* ===============================
+   Card Icon
+================================== */
+.card-icon-doc,
+.card-icon-profile,
+.card-icon-settings,
+.card-icon-apps,
+.card-icon-marketing,
+.card-icon-analytics,
+.card-icon-video,
+.card-icon-ai,
+.card-icon-store,
+.card-icon-ecom,
+.card-icon-team {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+/* ===============================
+   Card Title
+================================== */
+.card-title-doc,
+.card-title-profile,
+.card-title-settings,
+.card-title-apps,
+.card-title-marketing,
+.card-title-analytics,
+.card-title-video,
+.card-title-ai,
+.card-title-store,
+.card-title-ecom,
+.card-title-team {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1e293b;
+}
+
+/* ===============================
+   Card Description
+================================== */
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #475569;
+  padding: 0 0.5rem;
+}
+
+/* ===============================
+   Responsive
+================================== */
+@media (max-width: 768px) {
+  .main-card {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 2rem 1rem;
+  }
+
+  .card-title-doc,
+  .card-title-profile,
+  .card-title-settings {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+}

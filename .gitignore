@@ -1,0 +1,83 @@
+# --------------------
+# DOCODO: Frontend + Backend Git Ignore
+# --------------------
+
+# ========== Node.js ========== #
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========== Build & Cache ========== #
+dist/
+build/
+out/
+.next/
+.cache/
+*.log
+
+# ========== Environment Variables ========== #
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ========== OS/System Files ========== #
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ========== IDEs & Editors ========== #
+.vscode/
+.idea/
+*.code-workspace
+
+# ========== React ========== #
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+frontend/.cache/
+
+# ========== Express (Backend) ========== #
+backend/node_modules/
+backend/.env
+backend/logs/
+backend/tmp/
+backend/.DS_Store
+
+# ========== Logs & Coverage ========== #
+logs/
+*.log
+coverage/
+.nyc_output/
+
+# ========== Static Assets (Generated) ========== #
+public/static/
+frontend/public/static/
+frontend/public/assets/generated/
+
+# ========== Testing ========== #
+__tests__/
+*.test.js
+*.spec.js
+*.snap
+
+# ========== Misc ========== #
+*.pem
+*.key
+*.crt
+*.pid
+*.tgz
+
+# ========== Uploads & Data ========== #
+uploads/
+media/
+temp/
+files/
+# ========== SQLite ========== #
+*.db
+*.sqlite
+*.sqlite3

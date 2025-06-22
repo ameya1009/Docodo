@@ -1,0 +1,125 @@
+/* Root Variables for Easy Styling */
+:root {
+  --primary-color: #0c1a2b;
+  --secondary-color: #1e293b;
+  --accent-color: #60a5fa;
+  --text-color: #f1f5f9;
+  --light-bg: #f9fafb;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Overall Wrapper */
+.about-page {
+  font-family: var(--font-main);
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Background Logo */
+.about-page::before {
+  content: "";
+  background: url('../assets/FlexLogo.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.03;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Section Cards */
+.about-section {
+  background-color: var(--light-bg);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-4px);
+}
+
+.about-section.dark {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Titles */
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.about-section.dark .about-title {
+  color: var(--accent-color);
+}
+
+/* Paragraphs */
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-section.dark .about-text {
+  color: var(--text-color);
+}
+
+/* Founder Section */
+.about-founder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.founder-image {
+  flex: 1 1 300px;
+  height: 300px;
+  border-radius: 16px;
+  background: url('../assets/FlexLogo.png') center/cover no-repeat;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.founder-text {
+  flex: 2 1 400px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .about-founder {
+    flex-direction: column;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .about-title {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .founder-image {
+    height: 200px;
+    width: 100%;
+  }
+}

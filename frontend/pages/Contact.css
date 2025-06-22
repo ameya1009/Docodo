@@ -1,0 +1,123 @@
+/* Contact.css */
+
+.contact-main-card {
+  max-width: 900px;
+  margin: 3rem auto 5rem auto;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(to right, #f0f4f8, #ffffff);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+
+.contact-main-title {
+  font-size: 2.8rem;
+  color: #1f2937;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  user-select: none;
+}
+
+.contact-main-desc {
+  font-size: 1.2rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  user-select: none;
+}
+
+.contact-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to top right, #f9fafb, #dbeafe);
+}
+
+.contact-card-icon {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.contact-card-icon-doc {
+  color: #2563eb; /* Blue */
+}
+
+.contact-card-icon-profile {
+  color: #10b981; /* Emerald green */
+}
+
+.contact-card-icon-settings {
+  color: #f59e0b; /* Amber */
+}
+
+.contact-card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  user-select: none;
+}
+
+.contact-card-title-doc {
+  color: #2563eb;
+}
+
+.contact-card-title-profile {
+  color: #10b981;
+}
+
+.contact-card-title-settings {
+  color: #f59e0b;
+}
+
+.contact-card-desc {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.6;
+  user-select: text;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-main-title {
+    font-size: 2.2rem;
+  }
+
+  .contact-main-desc {
+    font-size: 1rem;
+  }
+
+  .contact-card-title {
+    font-size: 1.4rem;
+  }
+
+  .contact-card-desc {
+    font-size: 1rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+}

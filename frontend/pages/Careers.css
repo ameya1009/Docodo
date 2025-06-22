@@ -1,0 +1,154 @@
+/* Careers.css */
+
+/* Section Wrapper */
+.careers-section {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(to right, #eef3f7, #f9fbfc);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.careers-header h2 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  animation: fade-down 0.8s ease-out;
+}
+
+.careers-header p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  animation: fade-up 0.8s ease-out;
+}
+
+/* Grid Layout */
+.careers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Card */
+.careers-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  animation: zoom-in 0.6s ease;
+  cursor: default;
+}
+
+.careers-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to top right, #f9fafb, #e0f2fe);
+  cursor: pointer;
+}
+
+/* Icon */
+.careers-icon {
+  font-size: 3.5rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+  animation: pop-in 0.5s ease;
+  user-select: none;
+}
+
+/* Title */
+.careers-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.careers-desc {
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+/* Animations */
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .careers-header h2 {
+    font-size: 2rem;
+  }
+
+  .careers-card {
+    padding: 1.5rem;
+  }
+
+  .careers-title {
+    font-size: 1.3rem;
+  }
+
+  .careers-desc {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .careers-icon {
+    font-size: 3rem;
+  }
+}
